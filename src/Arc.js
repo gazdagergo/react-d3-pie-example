@@ -8,7 +8,8 @@ const Arc = ({
   outerRadius = 40,
   innerRadius = 30,
   startAngle = 0,
-  endAngle = 4
+  endAngle = 4,
+  ...rest
 }) => {
   const arcGenerator = d3.shape
     .arc()
@@ -17,7 +18,7 @@ const Arc = ({
     .startAngle(startAngle)
     .endAngle(endAngle);
 
-  return <path stroke="#FFFFFF" d={arcGenerator()} />;
+  return <path {...rest} d={arcGenerator()} />;
 };
 
 export default Arc;

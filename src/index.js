@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PieChart from "./PieChart";
+import AnimatedPies from "./AnimatedPies";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<PieChart />, rootElement);
+ReactDOM.render(<AnimatedPies />, rootElement);
